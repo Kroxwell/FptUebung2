@@ -274,7 +274,7 @@ public class MP3Controller {
                 this.model.getPlayer().play();
             }
 
-        } else if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() == 0)) {
+        } else if ((model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() == 0)) {
             // das sollte nicht passieren, ist eigentlich gar nicht möglich
             // kann höchstens passieren wenn die Pl gelöscht wird aber noch ein Song spielt (?)
             this.model.setMomentanerSong(null);
