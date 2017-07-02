@@ -69,25 +69,28 @@ public class MP3Model {
     }
 
 
-    /**
-     * Funktionen rund um die File ordner
-     */
+
     public File getOrdner() { return this.ordner; }
     public void setOrdner(File ordner) {
         this.ordner = ordner;
     }
 
-    /**
-     * Funktionen rund um die die SongListClass mp3dateien
-     */
-    public SongListClass getMp3dateien() { return this.mp3dateien; }
-    public void setMp3dateien(SongListClass dateien) throws RemoteException{ this.mp3dateien = dateien; }
-    public void delMp3dateien() throws RemoteException{ this.mp3dateien.deleteAllSongs(); }
 
-    /**
-     * Funktionen rund um die SongListClass playlist
-     */
-    public SongListClass getPlaylist() { return this.playlist; }
+    public SongListClass getMp3dateien() {
+        return this.mp3dateien;
+    }
+
+    public void setMp3dateien(SongListClass dateien) throws RemoteException{
+        this.mp3dateien = dateien;
+    }
+    public void delMp3dateien() throws RemoteException{
+        this.mp3dateien.deleteAllSongs();
+    }
+
+
+    public SongListClass getPlaylist() {
+        return this.playlist;
+    }
     public void setPlaylist(SongListClass playlist) {
         this.playlist = playlist;
     }
@@ -99,27 +102,22 @@ public class MP3Model {
         this.playlist.addSong(song);
     }
 
-    /**
-     * Funktionen rund um die SongClass auswahlMp3Song
-     */
+
     public SongClass getAuswahlMp3Song() { return this.auswahlMp3Song; }
     public void setAuswahlMp3Song(SongClass auswahlMp3Song) { this.auswahlMp3Song = auswahlMp3Song; }
 
-    /**
-     * Funktionen rund um die SongClass auswahlPlSong
-     */
+
     public SongClass getAuswahlPlSong() { return auswahlPlSong; }
     public void setAuswahlPlSong(SongClass auswahlPlSong) { this.auswahlPlSong = auswahlPlSong; }
 
-    /**
-     * Funktionen rund um die SongClass momentanerSong
-     */
-    public SongClass getMomentanerSong() { return momentanerSong; }
-    public void setMomentanerSong(SongClass momentanerSong) { this.momentanerSong = momentanerSong;}
 
-    /**
-     * Funktionen rund um den MediaPlayer player
-     */
+    public SongClass getMomentanerSong() {
+        return momentanerSong; }
+
+    public void setMomentanerSong(SongClass momentanerSong) {
+        this.momentanerSong = momentanerSong;}
+
     public MediaPlayer getPlayer() { return player; }
     public void setPlayer(MediaPlayer player) { this.player = player; }
+
 }

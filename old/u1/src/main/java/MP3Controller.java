@@ -19,6 +19,7 @@ import javafx.scene.media.MediaPlayer;
 import java.io.File;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import org.apache.commons.lang3.SystemUtils;
 
@@ -146,6 +147,7 @@ public class MP3Controller {
         // auf Null testen -> dann nix machen
         // man muss immer neu draufklicken
         // testen auf doppelte, die nicht hinzufügen!
+        System.out.print("onBtnShin");
         if (this.model.getAuswahlMp3Song() != null) {
             this.LstPl.getItems().add(this.model.getAuswahlMp3Song());
             this.model.setAuswahlMp3Song(null);
@@ -228,24 +230,16 @@ public class MP3Controller {
      *  => setzt auf Pause wenn aktueller Song gerade läuft
      *  => startet von vorne, wenn aktueller Song fertig ist? [sollte nicht da Autoplay nächster]
      */
-    @FXML protected void onBtnSstart(ActionEvent event) throws RemoteException {
-        // wie bei den anderen auf die anderen beiden Fälle prüfen!
-        if (this.model.getMomentanerSong() != null && this.model.getPlayer() != null) {
-            MediaPlayer.Status status = this.model.getPlayer().getStatus();
-            if (status == MediaPlayer.Status.PAUSED) {
-                this.model.getPlayer().play();
-            } else if (status == MediaPlayer.Status.PLAYING) {
-                this.model.getPlayer().pause();
-            } else if (status == MediaPlayer.Status.STOPPED) {
-                // nächsten Song in Playlist spielen ausser Playlist hat nur ein Element, dann aufhören
-                ArrayList<Song> pl = this.model.getPlaylist().getList();
-                // handeln vom Ende Liste!
-                this.model.setMomentanerSong((SongClass) pl.get(pl.indexOf(this.model.getMomentanerSong())+1));
+    @FXML protected void play(ActionEvent event) throws RemoteException {
 
-                this.model.setPlayer(new MediaPlayer(new Media(this.model.getMomentanerSong().getPath())));
-            }
-        }
+
     }
+
+    @FXML protected void buttonPause(){
+        this.model.getAuswahlMp3Song().getPath();
+
+    }
+
 
     /**
      * Funktion onBtnSnaechs (getriggert wenn man auf den "Nächsten Song abspielen" klickt)
@@ -257,7 +251,7 @@ public class MP3Controller {
     @FXML protected void onBtnSnaechs(ActionEvent event) throws RemoteException {
 
         if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() > 0)) {
-            ArrayList<Song> playlist = this.model.getPlaylist().getList(); // vlt überarbeiten -.-
+            ArrayList<Song> playlist = this.model.getPlaylist().getList();
             int index = playlist.indexOf(this.model.getMomentanerSong());
             MediaPlayer.Status altersong_status = this.model.getPlayer().getStatus();
 

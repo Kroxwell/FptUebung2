@@ -47,8 +47,10 @@
         <Label fx:id="LblAlbum" layoutX="399.0" layoutY="180.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" prefHeight="25.0" prefWidth="75.0" text="Album:" />
         <Button fx:id="BtnMetaSp" layoutX="399.0" layoutY="245.0" maxHeight="25.0" maxWidth="170.0" minHeight="25.0" minWidth="170.0" mnemonicParsing="false" onAction="#onBtnMetaSp" prefHeight="25.0" prefWidth="170.0" text="Metadaten speichern" />
         <Button fx:id="BtnSletzt" layoutX="14.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#onBtnSletzt" prefHeight="25.0" prefWidth="35.0" text="&lt;&lt;" />
-        <Button fx:id="BtnSstart" layoutX="54.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#onBtnSstart" prefHeight="25.0" prefWidth="35.0" text="|&gt;" />
+        <Button fx:id="BtnSstart" layoutX="54.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#play" prefHeight="25.0" prefWidth="35.0" text="|&gt;" />
         <Button fx:id="BtnSnaechs" layoutX="94.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#onBtnSnaechs" prefHeight="25.0" prefWidth="35.0" text="&gt;&gt;" />
+        <Button fx:id="buttonPause" onAction="#buttonPause" mnemonicParsing="false" text="Pause" />
         <Label fx:id="LblZeit" layoutX="159.0" layoutY="367.0" maxHeight="25.0" maxWidth="95.0" minHeight="25.0" minWidth="95.0" prefHeight="25.0" prefWidth="95.0" text="100:12 / 100:12" />
+
     </children>
 </Pane>
