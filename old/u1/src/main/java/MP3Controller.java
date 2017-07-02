@@ -81,7 +81,7 @@ public class MP3Controller {
      * Handler onBtnPlLad
      *  => noch nicht implementiert (Fällt vlt weg)
      */
-    @FXML protected void onBtnPlLad(ActionEvent event) {
+    @FXML protected void onBtnPlaylistLaden(ActionEvent event) {
         System.out.println("Noch nicht implementiert");
     }
 
@@ -89,7 +89,7 @@ public class MP3Controller {
      * Handler onBtnPlLoe
      *  => sollte wie Button PlNeu sein, wird zusammengepackt
      */
-    @FXML protected void onBtnPlLoe(ActionEvent event) {
+    @FXML protected void onBtnPlLöschen(ActionEvent event) {
         System.out.println("Siehe Button PlNeu!");
     }
 
@@ -100,7 +100,7 @@ public class MP3Controller {
      *  => LstMp3 und LstPl anpassen und davon abhängige Variablen (alle)
      *  => View updaten mit den neusten Sachen
      */
-    @FXML protected void onBtnOrdW(ActionEvent event) throws Exception {
+    @FXML protected void onBtnOrdnerWahl(ActionEvent event) throws Exception {
         DirectoryChooser chooser = new DirectoryChooser();
         File ordner;
 
@@ -155,17 +155,12 @@ public class MP3Controller {
      *  => löscht den per Mausklick ausgewählten Song aus PlLst
      */
     @FXML protected void onBtnSloe(ActionEvent event) throws RemoteException {
-        // auf Null testen
-        // falls es momentanerSong ist umändern auf nächsten, wenn am ende auf den ersten setzen
+        System.out.print("Sloe");
         this.model.getPlaylist().deleteSong(this.model.getAuswahlPlSong());
 
         // View Updaten
     }
 
-    /**
-     * Funktion onBtnMetaSp (getriggert wenn man auf den Button "Metadaten speichern" klickt)
-     *  => speichert die (geänderten) Metadaten des in der PlLst ausgewählten Songs
-     */
     @FXML protected void onBtnMetaSp(ActionEvent event) throws RemoteException{
         // ÜBERARBEITEN ! FUNKTIONIERT NOCH NICHT
         String album = this.TxtAlbum.getText();
@@ -220,12 +215,6 @@ public class MP3Controller {
         }
     }
 
-    /**
-     * Funktion onBtnSstart (getriggert wenn man auf "Song abspielen/ pausieren" klickt)
-     *  => spielt den aktuellen Song ab (wenn vorhanden)
-     *  => setzt auf Pause wenn aktueller Song gerade läuft
-     *  => startet von vorne, wenn aktueller Song fertig ist? [sollte nicht da Autoplay nächster]
-     */
     @FXML protected void play(ActionEvent event) throws RemoteException {
 
 
@@ -236,14 +225,6 @@ public class MP3Controller {
         System.out.print("bulb");
     }
 
-
-    /**
-     * Funktion onBtnSnaechs (getriggert wenn man auf den "Nächsten Song abspielen" klickt)
-     *  => setzt den aktiven Song auf den nächsten UND
-     *      => spielt ab wenn der momentane läuft,
-     *      => setzt den nur (oder nochmal auf Pause) wenn der andere pausiert,
-     *      => spielt ab oder setzt auf Pause wenn momentaner beendet ist (?) [sollte eigentlich nie passieren]
-     */
     @FXML protected void nächstesLied(ActionEvent event) throws RemoteException {
 
         if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() > 0)) {
@@ -275,12 +256,7 @@ public class MP3Controller {
         }
     }
 
-    /**
-     * Handler onMp3MsPressed (getriggert, wenn man in die ListView Mp3List klickt)
-     *  => setzt ausgewählten Song Mp3 auf den, auf den geklickt wurde
-     *      => wenn daneben geklickt/ ListView leer nix machen (?)
-     *  !!! Funktion wird nicht aufgerufen wenn man reinklickt !!!
-     */
+
     @FXML protected void onMp3MsPressed(MouseEvent event) throws RemoteException {
         SongClass ausgewaehlter_song =  (SongClass) this.LstMp3.getFocusModel().getFocusedItem();
         this.model.setAuswahlMp3Song(ausgewaehlter_song);
@@ -289,12 +265,7 @@ public class MP3Controller {
         System.out.println(this.model.getMp3dateien());
     }
 
-    /**
-     * Handler onPlMsPressed (getriggert, wenn man in die ListView Mp3List klickt)
-     *  => setzt ausgewählten Song Pl auf den, auf den geklickt wurde
-     *      => wenn daneben geklickt/ ListView leer nix machen (?)
-     *  !!! Funktion wird nicht aufgerufen wenn man reinklickt !!!
-     */
+
     @FXML protected void onPlMsPressed(MouseEvent event) {
         SongClass ausgewaehlter_song =  (SongClass) this.LstPl.getFocusModel().getFocusedItem();
         this.model.setAuswahlPlSong(ausgewaehlter_song);
