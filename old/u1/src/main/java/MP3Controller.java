@@ -186,7 +186,7 @@ public class MP3Controller {
      *      => setzt den nur (oder nochmal auf Pause) wenn der andere pausiert,
      *      => spielt ab oder setzt auf Pause wenn momentaner beendet ist (?) [sollte eigentlich nie passieren]
      */
-    @FXML protected void onBtnSletzt(ActionEvent event) throws RemoteException{
+    @FXML protected void letztesLied(ActionEvent event) throws RemoteException{
 
         // Prüfen ob der Player null ist!
 
