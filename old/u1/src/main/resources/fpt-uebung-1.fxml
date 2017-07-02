@@ -28,7 +28,7 @@
             </font>
         </Button>
         <Button fx:id="BtnOrdW" layoutX="14.0" layoutY="337.0" maxHeight="25.0" maxWidth="175.0" minHeight="25.0" minWidth="175.0" mnemonicParsing="false" onAction="#onBtnOrdW" prefHeight="25.0" prefWidth="175.0" text="Ordner auswählen" />
-        <Button fx:id="BtnShin" layoutX="199.0" layoutY="337.0" maxHeight="25.0" maxWidth="81.0" minHeight="25.0" minWidth="81.0" mnemonicParsing="false" onAction="#onBtnShin" prefHeight="25.0" prefWidth="81.0" text="Hinzufügen">
+        <Button fx:id="onButtonHinzufuegen" layoutX="199.0" layoutY="337.0" maxHeight="25.0" maxWidth="81.0" minHeight="25.0" minWidth="81.0" mnemonicParsing="false" onAction="#onButtonHinzufuegen" prefHeight="25.0" prefWidth="81.0" text="Hinzufügen">
             <font>
                 <Font size="12.0" />
             </font>

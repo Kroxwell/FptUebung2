@@ -143,15 +143,11 @@ public class MP3Controller {
      * Funktion onBtnShin (getriggert wenn man auf den Button "Song hinzufügen" clickt)
      *  => fügt den per Mausklick ausgewählten Song aus der Mp3Lst in PlLst hinzu
      */
-    @FXML protected void onBtnShin(ActionEvent event) {
-        // auf Null testen -> dann nix machen
-        // man muss immer neu draufklicken
-        // testen auf doppelte, die nicht hinzufügen!
-        System.out.print("onBtnShin");
-        if (this.model.getAuswahlMp3Song() != null) {
+    @FXML protected void onButtonHinzufuegen(ActionEvent event) {
+        System.out.print("onButtonHinzufuegen");
             this.LstPl.getItems().add(this.model.getAuswahlMp3Song());
             this.model.setAuswahlMp3Song(null);
-        }
+        
     }
 
     /**
@@ -236,8 +232,7 @@ public class MP3Controller {
     }
 
     @FXML protected void buttonPause(){
-        this.model.getAuswahlMp3Song().getPath();
-
+        this.model.playingBT();
     }
 
 

@@ -1,5 +1,6 @@
 import classes.SongClass;
 import classes.SongListClass;
+import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
 import java.io.File;
@@ -68,6 +69,12 @@ public class MP3Model {
         this.player = null;
     }
 
+    public void playingBT(){
+        String path = "C:\\Users\\Marco\\Desktop\\Uni\\FPT\\Musikplayer\\RustedfromtheRain.mp3";
+        Media media = new Media(new File(path).toURI().toString());
+        MediaPlayer p = new MediaPlayer(media);
+        p.play();
+    }
 
 
     public File getOrdner() { return this.ordner; }
