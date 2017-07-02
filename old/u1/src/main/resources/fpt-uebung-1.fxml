@@ -9,15 +9,15 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MP3Controller">
     <children>
-        <ListView fx:id="listViewMP3" layoutX="14.0" layoutY="37.0" maxHeight="300.0" maxWidth="175.0" minHeight="300.0" minWidth="175.0" onMouseClicked="#listViewMP3" prefHeight="300.0" prefWidth="175.0" />
+        <ListView fx:id="LstMp3" layoutX="14.0" layoutY="37.0" maxHeight="300.0" maxWidth="175.0" minHeight="300.0" minWidth="175.0" onMouseClicked="#onMp3MsPressed" prefHeight="300.0" prefWidth="175.0" />
         <Label fx:id="LblOrdN" layoutX="14.0" layoutY="12.0" maxHeight="25.0" maxWidth="175.0" minHeight="25.0" minWidth="175.0" prefHeight="25.0" prefWidth="175.0" text="&lt; Ordnername &gt;" />
         <ListView fx:id="LstPl" layoutX="200.0" layoutY="37.0" maxHeight="300.0" maxWidth="175.0" minHeight="300.0" minWidth="175.0" onMouseClicked="#onPlMsPressed" prefHeight="300.0" prefWidth="175.0" />
-        <Button fx:id="onButtonNeu" layoutX="200.0" layoutY="11.0" maxHeight="25.0" maxWidth="57.0" minHeight="25.0" minWidth="57.0" mnemonicParsing="false" onAction="#onButtonNeu" prefHeight="25.0" prefWidth="57.0" text="Neu">
+        <Button fx:id="BtnPlNeu" layoutX="200.0" layoutY="11.0" maxHeight="25.0" maxWidth="57.0" minHeight="25.0" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnPlNeu" prefHeight="25.0" prefWidth="57.0" text="Neu">
             <font>
                 <Font size="10.0" />
             </font>
         </Button>
-        <Button fx:id="onBtnPlaylistLaden" layoutX="259.0" layoutY="11.0" maxHeight="25.0" maxWidth="57.0" minHeight="25.0" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnPlaylistLaden" prefHeight="25.0" prefWidth="57.0" text="Laden">
+        <Button fx:id="BtnPlLad" layoutX="259.0" layoutY="11.0" maxHeight="25.0" maxWidth="57.0" minHeight="25.0" minWidth="57.0" mnemonicParsing="false" onAction="#onBtnPlLad" prefHeight="25.0" prefWidth="57.0" text="Laden">
             <font>
                 <Font size="10.0" />
             </font>
@@ -27,13 +27,13 @@
                 <Font size="10.0" />
             </font>
         </Button>
-        <Button fx:id="onButtonOrdnerWählen" layoutX="14.0" layoutY="337.0" maxHeight="25.0" maxWidth="175.0" minHeight="25.0" minWidth="175.0" mnemonicParsing="false" onAction="#onButtonOrdnerWählen" prefHeight="25.0" prefWidth="175.0" text="Ordner auswählen" />
+        <Button fx:id="BtnOrdW" layoutX="14.0" layoutY="337.0" maxHeight="25.0" maxWidth="175.0" minHeight="25.0" minWidth="175.0" mnemonicParsing="false" onAction="#onBtnOrdW" prefHeight="25.0" prefWidth="175.0" text="Ordner auswählen" />
         <Button fx:id="onButtonHinzufuegen" layoutX="199.0" layoutY="337.0" maxHeight="25.0" maxWidth="81.0" minHeight="25.0" minWidth="81.0" mnemonicParsing="false" onAction="#onButtonHinzufuegen" prefHeight="25.0" prefWidth="81.0" text="Hinzufügen">
             <font>
                 <Font size="12.0" />
             </font>
         </Button>
-        <Button fx:id="onButtonLöschen" layoutX="280.0" layoutY="337.0" maxHeight="25.0" maxWidth="97.0" minHeight="25.0" mnemonicParsing="false" onAction="#onButtonLöschen" prefHeight="25.0" text="Song Löschen">
+        <Button fx:id="BtnSloe" layoutX="280.0" layoutY="337.0" maxHeight="25.0" maxWidth="97.0" minHeight="25.0" mnemonicParsing="false" onAction="#onBtnSloe" prefHeight="25.0" text="Song Löschen">
             <font>
                 <Font size="12.0" />
             </font>
@@ -46,9 +46,9 @@
         <Label fx:id="LblInterp" layoutX="399.0" layoutY="122.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" prefHeight="25.0" prefWidth="75.0" text="Interpret:" />
         <Label fx:id="LblAlbum" layoutX="399.0" layoutY="180.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" prefHeight="25.0" prefWidth="75.0" text="Album:" />
         <Button fx:id="BtnMetaSp" layoutX="399.0" layoutY="245.0" maxHeight="25.0" maxWidth="170.0" minHeight="25.0" minWidth="170.0" mnemonicParsing="false" onAction="#onBtnMetaSp" prefHeight="25.0" prefWidth="170.0" text="Metadaten speichern" />
-        <Button fx:id="BtnLetztesLied" layoutX="14.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#BtnLetztesLied" prefHeight="25.0" prefWidth="35.0" text="&lt;&lt;" />
+        <Button fx:id="BtnSletzt" layoutX="14.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#onBtnSletzt" prefHeight="25.0" prefWidth="35.0" text="&lt;&lt;" />
         <Button fx:id="BtnSstart" layoutX="54.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#play" prefHeight="25.0" prefWidth="35.0" text="|&gt;" />
-        <Button fx:id="onBtnNächstesLied" layoutX="94.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#onBtnNächstesLied" prefHeight="25.0" prefWidth="35.0" text="&gt;&gt;" />
+        <Button fx:id="BtnSnaechs" layoutX="94.0" layoutY="367.0" maxHeight="25.0" maxWidth="35.0" minHeight="25.0" minWidth="35.0" mnemonicParsing="false" onAction="#onBtnSnaechs" prefHeight="25.0" prefWidth="35.0" text="&gt;&gt;" />
         <Button fx:id="buttonPause" onAction="#buttonPause" mnemonicParsing="false" text="Pause" />
         <Label fx:id="LblZeit" layoutX="159.0" layoutY="367.0" maxHeight="25.0" maxWidth="95.0" minHeight="25.0" minWidth="95.0" prefHeight="25.0" prefWidth="95.0" text="100:12 / 100:12" />
 

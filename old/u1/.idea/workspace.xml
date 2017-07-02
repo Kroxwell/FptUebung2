@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/u1_G19$MainClass.coverage" NAME="MainClass Coverage Results" MODIFIED="1499008404761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/u1_G19$MainClass.coverage" NAME="MainClass Coverage Results" MODIFIED="1498852894525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -44,8 +44,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="157" lean-forward="true" selection-start-line="11" selection-start-column="155" selection-end-line="11" selection-end-column="166" />
+            <state relative-caret-position="239">
+              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -54,8 +54,8 @@
       <file leaf-file-name="MP3Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MP3Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+            <state relative-caret-position="442">
+              <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#ordner#0;class#MP3Model#0" expanded="false" />
@@ -69,30 +69,30 @@
       <file leaf-file-name="MP3Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MP3Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="284" column="62" lean-forward="false" selection-start-line="284" selection-start-column="62" selection-end-line="284" selection-end-column="62" />
+            <state relative-caret-position="605">
+              <caret line="235" column="33" lean-forward="true" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
               <folding>
                 <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-                <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-                <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+                <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+                <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
                 <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-                <element signature="e#2515#2516#0" expanded="true" />
-                <element signature="e#2559#2560#0" expanded="true" />
-                <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-                <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-                <element signature="e#4006#4033#0" expanded="false" />
+                <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+                <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+                <element signature="e#4183#4210#0" expanded="false" />
                 <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-                <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+                <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+                <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+                <element signature="e#5201#5219#0" expanded="false" />
                 <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
                 <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-                <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-                <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-                <element signature="e#7463#7526#0" expanded="false" />
-                <element signature="e#7793#7839#0" expanded="false" />
+                <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+                <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+                <element signature="e#7712#7775#0" expanded="false" />
+                <element signature="e#8042#8088#0" expanded="false" />
                 <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-                <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-                <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-                <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+                <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+                <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+                <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
                 <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
               </folding>
             </state>
@@ -102,8 +102,8 @@
       <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -122,7 +122,6 @@
     <findStrings>
       <find>throws</find>
       <find>ListView</find>
-      <find>onBtnPlay</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -451,8 +450,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31078225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21670191" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -469,6 +467,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -510,25 +509,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MP3Controller.java</url>
-          <line>136</line>
+          <line>139</line>
           <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MP3Controller.java</url>
-          <line>246</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/MP3Controller.java</url>
-          <line>244</line>
-          <properties class="MP3Controller" method="onBtnSnaechs">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -537,6 +522,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MP3Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="135" column="87" lean-forward="false" selection-start-line="135" selection-start-column="87" selection-end-line="135" selection-end-column="87" />
+          <folding>
+            <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
+            <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
+            <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
+            <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/classes/SongListClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -602,26 +618,26 @@
           <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
@@ -642,26 +658,26 @@
           <caret line="181" column="30" lean-forward="false" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
@@ -712,26 +728,26 @@
           <caret line="181" column="30" lean-forward="false" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
@@ -812,26 +828,26 @@
           <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
@@ -882,26 +898,26 @@
           <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
@@ -952,26 +968,26 @@
           <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
@@ -1025,26 +1041,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MP3Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="442">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#ordner#0;class#MP3Model#0" expanded="false" />
@@ -1059,38 +1067,38 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="157" lean-forward="true" selection-start-line="11" selection-start-column="155" selection-end-line="11" selection-end-column="166" />
+        <state relative-caret-position="239">
+          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MP3Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="284" column="62" lean-forward="false" selection-start-line="284" selection-start-column="62" selection-end-line="284" selection-end-column="62" />
+        <state relative-caret-position="605">
+          <caret line="235" column="33" lean-forward="true" selection-start-line="235" selection-start-column="33" selection-end-line="235" selection-end-column="33" />
           <folding>
             <element signature="docComment;field#LblOrdN#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonNeu#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnPlaylistLaden#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnPlNeu#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnPlLad#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onBtnPlLoe#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="docComment;method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onButtonOrdnerWählen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#4006#4033#0" expanded="false" />
+            <element signature="docComment;method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnOrdW#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#4183#4210#0" expanded="false" />
             <element signature="docComment;method#onButtonHinzufuegen#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onButtonLöschen#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSloe#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#5201#5219#0" expanded="false" />
             <element signature="docComment;method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
             <element signature="method#onBtnMetaSp#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#BtnLetztesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="e#7463#7526#0" expanded="false" />
-            <element signature="e#7793#7839#0" expanded="false" />
+            <element signature="docComment;method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSletzt#0;class#MP3Controller#0" expanded="false" />
+            <element signature="e#7712#7775#0" expanded="false" />
+            <element signature="e#8042#8088#0" expanded="false" />
             <element signature="docComment;method#play#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="method#onBtnNächstesLied#0;class#MP3Controller#0" expanded="false" />
-            <element signature="docComment;method#listViewMP3#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="method#onBtnSnaechs#0;class#MP3Controller#0" expanded="false" />
+            <element signature="docComment;method#onMp3MsPressed#0;class#MP3Controller#0" expanded="false" />
             <element signature="docComment;method#onPlMsPressed#0;class#MP3Controller#0" expanded="false" />
           </folding>
         </state>
