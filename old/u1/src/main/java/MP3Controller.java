@@ -244,7 +244,7 @@ public class MP3Controller {
      *      => setzt den nur (oder nochmal auf Pause) wenn der andere pausiert,
      *      => spielt ab oder setzt auf Pause wenn momentaner beendet ist (?) [sollte eigentlich nie passieren]
      */
-    @FXML protected void onBtnSnaechs(ActionEvent event) throws RemoteException {
+    @FXML protected void nächstesLied(ActionEvent event) throws RemoteException {
 
         if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() > 0)) {
             ArrayList<Song> playlist = this.model.getPlaylist().getList();
