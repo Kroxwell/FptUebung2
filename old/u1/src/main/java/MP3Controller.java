@@ -72,7 +72,8 @@ public class MP3Controller {
      * Handler onBtnPlNeu
      *  => löscht alle Elemente aus LstPl für eine neue
      */
-    @FXML protected void onBtnPlNeu(ActionEvent event) throws RemoteException {
+    @FXML protected void onButtonNeu(ActionEvent event) throws RemoteException {
+        System.out.print("onButtonNeu");
         System.out.println(this.model); // gibt null zurück
         this.model.delPlaylist();
     }
@@ -81,8 +82,8 @@ public class MP3Controller {
      * Handler onBtnPlLad
      *  => noch nicht implementiert (Fällt vlt weg)
      */
-    @FXML protected void onBtnPlLad(ActionEvent event) {
-        System.out.println("Noch nicht implementiert");
+    @FXML protected void onBtnPlaylistLaden(ActionEvent event) {
+        System.out.println("onBtnPlaylistLaden");
     }
 
     /**
@@ -90,7 +91,7 @@ public class MP3Controller {
      *  => sollte wie Button PlNeu sein, wird zusammengepackt
      */
     @FXML protected void onBtnPlLoe(ActionEvent event) {
-        System.out.println("Siehe Button PlNeu!");
+        System.out.println("plLoe!");
     }
 
     /**
@@ -100,7 +101,7 @@ public class MP3Controller {
      *  => LstMp3 und LstPl anpassen und davon abhängige Variablen (alle)
      *  => View updaten mit den neusten Sachen
      */
-    @FXML protected void onBtnOrdW(ActionEvent event) throws Exception {
+    @FXML protected void onButtonOrdnerWählen(ActionEvent event) throws Exception {
         DirectoryChooser chooser = new DirectoryChooser();
         File ordner;
 
@@ -112,10 +113,6 @@ public class MP3Controller {
         chooser.setTitle("Ordner mit MP3-Dateien wählen");
 
         ordner = chooser.showDialog(((Node) event.getSource()).getScene().getWindow());
-        if (ordner == null) { // z.B. wenn man auf "cancel" drückt
-            // Handeln: Gar nichts tun? Bisher ist das nur Platzhalter!
-            throw new Exception("Fehler, keinen Ordner ausgewählt!");
-        }
 
         this.LblOrdN.setText(ordner.toString());
 
@@ -145,8 +142,9 @@ public class MP3Controller {
      */
     @FXML protected void onButtonHinzufuegen(ActionEvent event) {
         System.out.print("onButtonHinzufuegen");
-            this.LstPl.getItems().add(this.model.getAuswahlMp3Song());
-            this.model.setAuswahlMp3Song(null);
+
+        this.LstPl.getItems().add(this.model.getAuswahlMp3Song());
+        this.model.setAuswahlMp3Song(null);
 
     }
 
@@ -154,12 +152,12 @@ public class MP3Controller {
      * Funktion onBtnSloe (getriggert wenn man auf den Button "Song löschen" klickt)
      *  => löscht den per Mausklick ausgewählten Song aus PlLst
      */
-    @FXML protected void onBtnSloe(ActionEvent event) throws RemoteException {
-        // auf Null testen
-        // falls es momentanerSong ist umändern auf nächsten, wenn am ende auf den ersten setzen
+    @FXML protected void onButtonLöschen(ActionEvent event) throws RemoteException {
+
+        System.out.print("löschen");
         this.model.getPlaylist().deleteSong(this.model.getAuswahlPlSong());
 
-        // View Updaten
+
     }
 
     /**
@@ -186,8 +184,8 @@ public class MP3Controller {
      *      => setzt den nur (oder nochmal auf Pause) wenn der andere pausiert,
      *      => spielt ab oder setzt auf Pause wenn momentaner beendet ist (?) [sollte eigentlich nie passieren]
      */
-    @FXML protected void onBtnSletzt(ActionEvent event) throws RemoteException{
-
+    @FXML protected void BtnLetztesLied(ActionEvent event) throws RemoteException{
+        System.out.print("Sletzt");
         // Prüfen ob der Player null ist!
 
         if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() > 0)) {
@@ -244,8 +242,8 @@ public class MP3Controller {
      *      => setzt den nur (oder nochmal auf Pause) wenn der andere pausiert,
      *      => spielt ab oder setzt auf Pause wenn momentaner beendet ist (?) [sollte eigentlich nie passieren]
      */
-    @FXML protected void onBtnSnaechs(ActionEvent event) throws RemoteException {
-
+    @FXML protected void onBtnNächstesLied(ActionEvent event) throws RemoteException {
+        System.out.print("Snächste");
         if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() > 0)) {
             ArrayList<Song> playlist = this.model.getPlaylist().getList();
             int index = playlist.indexOf(this.model.getMomentanerSong());
@@ -281,9 +279,11 @@ public class MP3Controller {
      *      => wenn daneben geklickt/ ListView leer nix machen (?)
      *  !!! Funktion wird nicht aufgerufen wenn man reinklickt !!!
      */
-    @FXML protected void onMp3MsPressed(MouseEvent event) throws RemoteException {
-        SongClass ausgewaehlter_song =  (SongClass) this.LstMp3.getFocusModel().getFocusedItem();
-        this.model.setAuswahlMp3Song(ausgewaehlter_song);
+    @FXML protected void listViewMP3(MouseEvent event) throws RemoteException {
+       System.out.print("MsPressed");
+
+        SongClass ausgewählter_song =  (SongClass) this.LstMp3.getFocusModel().getFocusedItem();
+        this.model.setAuswahlMp3Song(ausgewählter_song);
 
         // DEBUG
         System.out.println(this.model.getMp3dateien());
@@ -296,6 +296,7 @@ public class MP3Controller {
      *  !!! Funktion wird nicht aufgerufen wenn man reinklickt !!!
      */
     @FXML protected void onPlMsPressed(MouseEvent event) {
+        System.out.print("MsPressed");
         SongClass ausgewaehlter_song =  (SongClass) this.LstPl.getFocusModel().getFocusedItem();
         this.model.setAuswahlPlSong(ausgewaehlter_song);
 
