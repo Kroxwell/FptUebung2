@@ -72,7 +72,7 @@ public class MP3Controller {
      * Handler onBtnPlNeu
      *  => löscht alle Elemente aus LstPl für eine neue
      */
-    @FXML protected void onBtnPlNeu(ActionEvent event) throws RemoteException {
+    @FXML protected void onBtnPlayListNeu(ActionEvent event) throws RemoteException {
         System.out.println(this.model); // gibt null zurück
         this.model.delPlaylist();
     }
