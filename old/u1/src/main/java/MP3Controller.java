@@ -147,7 +147,7 @@ public class MP3Controller {
         System.out.print("onButtonHinzufuegen");
             this.LstPl.getItems().add(this.model.getAuswahlMp3Song());
             this.model.setAuswahlMp3Song(null);
-        
+
     }
 
     /**
@@ -233,6 +233,7 @@ public class MP3Controller {
 
     @FXML protected void buttonPause(){
         this.model.playingBT();
+        System.out.print("bulb");
     }
 
 
