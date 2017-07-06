@@ -2,7 +2,6 @@ import classes.SongClass;
 import classes.SongListClass;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-
 import java.io.File;
 import java.rmi.RemoteException;
 
@@ -90,33 +89,36 @@ public class MP3Model {
     public void setMp3dateien(SongListClass dateien) throws RemoteException{
         this.mp3dateien = dateien;
     }
+
     public void delMp3dateien() throws RemoteException{
         this.mp3dateien.deleteAllSongs();
     }
 
-
     public SongListClass getPlaylist() {
         return this.playlist;
     }
+
     public void setPlaylist(SongListClass playlist) {
         this.playlist = playlist;
     }
+
     public void delPlaylist() throws RemoteException { this.playlist.deleteAllSongs(); }
+
     public void deleteElementFromPlaylist(String path) throws RemoteException {
         this.playlist.deleteSong(this.playlist.findSongByPath(path));
     }
+
     public void addElementToPlaylist(SongClass song) throws RemoteException{
         this.playlist.addSong(song);
     }
 
-
     public SongClass getAuswahlMp3Song() { return this.auswahlMp3Song; }
+
     public void setAuswahlMp3Song(SongClass auswahlMp3Song) { this.auswahlMp3Song = auswahlMp3Song; }
 
-
     public SongClass getAuswahlPlSong() { return auswahlPlSong; }
-    public void setAuswahlPlSong(SongClass auswahlPlSong) { this.auswahlPlSong = auswahlPlSong; }
 
+    public void setAuswahlPlSong(SongClass auswahlPlSong) { this.auswahlPlSong = auswahlPlSong; }
 
     public SongClass getMomentanerSong() {
         return momentanerSong; }

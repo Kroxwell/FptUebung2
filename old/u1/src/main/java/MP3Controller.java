@@ -19,40 +19,20 @@ import javafx.scene.media.MediaPlayer;
 import java.io.File;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
-import java.util.Collections;
 
 import org.apache.commons.lang3.SystemUtils;
 
 
 public class MP3Controller {
 
-    /**     ==================================
-     *      -*- INHALT DER KLASSE MP3Model -*-
-     *      ==================================
-     *
-     *
-     * Alle FXML-Elemente, die es gibt
-     *  => später alles unnötige rauswerfen
-     *
-     * MP3Mode model, das alle Dateien beinhaltet
-     *  => Aufruf von Methoden zur Änderung der Daten
-     *
-     * MP3View view, überflüssig aber ich lass das erstmal drinnen
-     *  => falls FXML nicht geht und zusätzlich als Hardcode-Möglichkeit
-     */
-
     @FXML private Label LblOrdN;
-    @FXML private Label LblTitle;
-    @FXML private Label LblInterp;
-    @FXML private Label LblAlbum;
-    @FXML private Label LblZeit;
 
     @FXML private TextField TxtTitel;
     @FXML private TextField TxtInterp;
     @FXML private TextField TxtAlbum;
 
-    @FXML private ListView LstMp3;
-    @FXML private ListView LstPl;
+    @FXML private ListView listViewMP3;
+    @FXML private ListView listViewPlaylist;
 
     private MP3Model model;
     private MP3View view;
@@ -64,42 +44,25 @@ public class MP3Controller {
 
     public MP3Controller() {
         this.model = new MP3Model();
-        this.view = new MP3View(); // löschen
+        this.view = new MP3View();
     }
 
 
-    /**
-     * Handler onBtnPlNeu
-     *  => löscht alle Elemente aus LstPl für eine neue
-     */
     @FXML protected void onBtnPlayListNeu(ActionEvent event) throws RemoteException {
         System.out.println(this.model); // gibt null zurück
         this.model.delPlaylist();
     }
 
-    /**
-     * Handler onBtnPlLad
-     *  => noch nicht implementiert (Fällt vlt weg)
-     */
     @FXML protected void onBtnPlaylistLaden(ActionEvent event) {
+
         System.out.println("Noch nicht implementiert");
     }
 
-    /**
-     * Handler onBtnPlLoe
-     *  => sollte wie Button PlNeu sein, wird zusammengepackt
-     */
     @FXML protected void onBtnPlLöschen(ActionEvent event) {
+
         System.out.println("Siehe Button PlNeu!");
     }
 
-    /**
-     * Handler onBtnOrdW (getriggert wenn man auf "Ordner auswählen" klickt)
-     *  => Ordner auswählen mit den MP3-Dateien drin
-     *  => Ordner als File ordner oder String ordnerPath im Model speichern
-     *  => LstMp3 und LstPl anpassen und davon abhängige Variablen (alle)
-     *  => View updaten mit den neusten Sachen
-     */
     @FXML protected void onBtnOrdnerWahl(ActionEvent event) throws Exception {
         DirectoryChooser chooser = new DirectoryChooser();
         File ordner;
@@ -136,24 +99,16 @@ public class MP3Controller {
 
         this.songlist = FXCollections.observableList(this.model.getMp3dateien().getList());
         if (this.songlist == null) { throw new Exception("SongList ist empty"); }
-        this.LstMp3.setItems(songlist);
+        this.listViewMP3.setItems(songlist);
     }
 
-    /**
-     * Funktion onBtnShin (getriggert wenn man auf den Button "Song hinzufügen" clickt)
-     *  => fügt den per Mausklick ausgewählten Song aus der Mp3Lst in PlLst hinzu
-     */
     @FXML protected void onButtonHinzufuegen(ActionEvent event) {
         System.out.print("onButtonHinzufuegen");
-            this.LstPl.getItems().add(this.model.getAuswahlMp3Song());
+            this.listViewPlaylist.getItems().add(this.model.getAuswahlMp3Song());
             this.model.setAuswahlMp3Song(null);
 
     }
 
-    /**
-     * Funktion onBtnSloe (getriggert wenn man auf den Button "Song löschen" klickt)
-     *  => löscht den per Mausklick ausgewählten Song aus PlLst
-     */
     @FXML protected void onBtnSloe(ActionEvent event) throws RemoteException {
         System.out.print("Sloe");
         this.model.getPlaylist().deleteSong(this.model.getAuswahlPlSong());
@@ -174,13 +129,6 @@ public class MP3Controller {
         pl.get(index).setInterpret(interp);
     }
 
-    /**
-     * Funktion onBtnSletzt (getriggert wenn man auf den "Letzten Song abspielen" klickt)
-     *  => setzt den aktiven Song auf den vorherigen UND
-     *      => spielt ab wenn der momentane läuft,
-     *      => setzt den nur (oder nochmal auf Pause) wenn der andere pausiert,
-     *      => spielt ab oder setzt auf Pause wenn momentaner beendet ist (?) [sollte eigentlich nie passieren]
-     */
     @FXML protected void letztesLied(ActionEvent event) throws RemoteException{
 
         // Prüfen ob der Player null ist!
@@ -217,6 +165,8 @@ public class MP3Controller {
 
     @FXML protected void play(ActionEvent event) throws RemoteException {
 
+        this.listViewPlaylist.getItems().addAll(songlist);
+       // this.model.getPlayer().get
 
     }
 
@@ -258,7 +208,8 @@ public class MP3Controller {
 
 
     @FXML protected void onMp3MsPressed(MouseEvent event) throws RemoteException {
-        SongClass ausgewaehlter_song =  (SongClass) this.LstMp3.getFocusModel().getFocusedItem();
+        System.out.println("onMp§MsPressed");
+        SongClass ausgewaehlter_song =  (SongClass) this.listViewMP3.getFocusModel().getFocusedItem();
         this.model.setAuswahlMp3Song(ausgewaehlter_song);
 
         // DEBUG
@@ -267,8 +218,13 @@ public class MP3Controller {
 
 
     @FXML protected void onPlMsPressed(MouseEvent event) {
-        SongClass ausgewaehlter_song =  (SongClass) this.LstPl.getFocusModel().getFocusedItem();
-        this.model.setAuswahlPlSong(ausgewaehlter_song);
+        System.out.println("onPlMsPressed");
+        SongClass ausgewaehlter_song =  (SongClass) this.listViewPlaylist.getFocusModel().getFocusedItem();
+        try {
+            this.model.getPlaylist().addSong(ausgewaehlter_song);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
 
         // Metadatenanzeige ändern, wenn man auf einen anderen Song clickt
     }

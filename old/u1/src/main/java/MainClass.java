@@ -25,6 +25,8 @@ public class MainClass extends Application {
         p.play();
 */
 
+
+
         Parent root = FXMLLoader.load(getClass().getResource("fpt-uebung-1.fxml"));
 
         Scene scene = new Scene(root);
