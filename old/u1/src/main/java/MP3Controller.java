@@ -165,8 +165,41 @@ public class MP3Controller {
 
     @FXML protected void play(ActionEvent event) throws RemoteException {
 
-        this.listViewPlaylist.getItems().addAll(songlist);
-       // this.model.getPlayer().get
+//            System.out.println("ftgfjhgfvhg" + this.model.getAuswahlMp3Song().toString());
+//        this.model.setPlayer(new MediaPlayer(new Media(this.model.getMomentanerSong().getPath())));
+//        model.getPlayer().play();
+
+//        if(this.model.getPlayer() == null){
+//            model.setPlayer(new MediaPlayer(null));
+//        }
+//
+//        MediaPlayer p = new MediaPlayer(new Media(new File("C:\\Queen.mp3").toURI().toString()));
+//        p.play();
+
+
+//        while (true) {
+//            System.out.println(p.getCurrentTime());
+//        }
+//        if (this.model.getMomentanerSong() != null && this.model.getPlayer() != null) {
+//            System.out.println("blub1");
+//            MediaPlayer.Status status = this.model.getPlayer().getStatus();
+//            if (status == MediaPlayer.Status.PAUSED) {
+//                this.model.getPlayer().play();
+//            } else if (status == MediaPlayer.Status.PLAYING) {
+//                this.model.getPlayer().pause();
+//            } else if (status == MediaPlayer.Status.STOPPED) {
+//                // nächsten Song in Playlist spielen ausser Playlist hat nur ein Element, dann aufhören
+//                ArrayList<Song> pl = this.model.getPlaylist().getList();
+//                // handeln vom Ende Liste!
+//                this.model.setMomentanerSong((SongClass) pl.get(pl.indexOf(this.model.getMomentanerSong()) + 1));
+//            }
+//        }//else if(model.getPlayer() == null) {           this.model.setPlayer(new MediaPlayer(new Media(this.model.getMomentanerSong().getPath())));}
+
+//        model.getAuswahlMp3Song().setPath("C:\\Queen.mp3");
+//        System.out.println(model.getAuswahlMp3Song().getPath());
+
+        MediaPlayer player = new MediaPlayer(new Media(new File(model.getAuswahlPlSong().getPath()).toURI().toString()));
+        player.play();
 
     }
 
