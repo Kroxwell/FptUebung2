@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MP3Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MP3ControllerClient">
     <children>
         <ListView fx:id="listViewMP3" layoutX="14.0" layoutY="37.0" maxHeight="300.0" maxWidth="175.0" minHeight="300.0" minWidth="175.0" onMouseClicked="#onMp3MsPressed" prefHeight="300.0" prefWidth="175.0" />
         <Label fx:id="LblOrdN" layoutX="14.0" layoutY="12.0" maxHeight="25.0" maxWidth="175.0" minHeight="25.0" minWidth="175.0" prefHeight="25.0" prefWidth="175.0" text="&lt; Ordnername &gt;" />

@@ -1,29 +1,26 @@
 import classes.SongClass;
 import classes.SongListClass;
 import interfaces.Song;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.DirectoryChooser;
-
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.stage.DirectoryChooser;
+import org.apache.commons.lang3.SystemUtils;
 
 import java.io.File;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import org.apache.commons.lang3.SystemUtils;
 
-
-public class MP3Controller {
+public class MP3ControllerServer {
 
     @FXML private Label LblOrdN;
 
@@ -34,17 +31,17 @@ public class MP3Controller {
     @FXML private ListView listViewMP3;
     @FXML private ListView listViewPlaylist;
 
-    private MP3Model model;
-    private MP3View view;
+    private MP3ModelClient model;
+    private MP3ViewClient view;
 
     /* DEBUG KOMMT WEG */
     ObservableList<Song> songlist;
     /* END DEBUG */
 
 
-    public MP3Controller() {
-        this.model = new MP3Model();
-        this.view = new MP3View();
+    public MP3ControllerServer() {
+        this.model = new MP3ModelClient();
+        this.view = new MP3ViewClient();
     }
 
 
@@ -164,7 +161,6 @@ public class MP3Controller {
     }
 
     @FXML protected void play(ActionEvent event) throws RemoteException {
-
 //            System.out.println("ftgfjhgfvhg" + this.model.getAuswahlMp3Song().toString());
 //        this.model.setPlayer(new MediaPlayer(new Media(this.model.getMomentanerSong().getPath())));
 //        model.getPlayer().play();
@@ -196,18 +192,19 @@ public class MP3Controller {
 //        }//else if(model.getPlayer() == null) {           this.model.setPlayer(new MediaPlayer(new Media(this.model.getMomentanerSong().getPath())));}
 
 //        model.getAuswahlMp3Song().setPath("C:\\Queen.mp3");
-//        System.out.println(model.getAuswahlMp3Song().getPath());
-
-        MediaPlayer player = new MediaPlayer(new Media(new File(model.getAuswahlPlSong().getPath()).toURI().toString()));
-        player.play();
-
+//        System.out.println(model.getAuswahlMp3Song().getPath().toString());
+//        MediaPlayer p = new MediaPlayer(new Media(new File( model.getAuswahlPlSong().getPath() ).toURI().toString()));
+//        System.out.println(this.model.getAuswahlMp3Song().getPath());
+//       new MediaPlayer(new Media(new File( model.getAuswahlPlSong().getPath() ).toURI().toString() ) ).play();
+    int focusSong = listViewMP3.getFocusModel().getFocusedIndex();
+    System.out.println(model.getMp3dateien().getList().get(focusSong).getPath());
+    new MediaPlayer(new Media(new File( model.getMp3dateien().getList().get(focusSong).getPath() ).toURI().toString() ) ).play();
     }
 
     @FXML protected void buttonPause(){
-        this.model.playingBT();
+
         System.out.print("bulb");
     }
-
     @FXML protected void nächstesLied(ActionEvent event) throws RemoteException {
 
         if ((this.model.getMomentanerSong() != null) && (this.model.getPlaylist().sizeOfList() > 0)) {
@@ -239,14 +236,16 @@ public class MP3Controller {
         }
     }
 
-
     @FXML protected void onMp3MsPressed(MouseEvent event) throws RemoteException {
         System.out.println("onMp§MsPressed");
         SongClass ausgewaehlter_song =  (SongClass) this.listViewMP3.getFocusModel().getFocusedItem();
         this.model.setAuswahlMp3Song(ausgewaehlter_song);
 
         // DEBUG
-        System.out.println(this.model.getMp3dateien());
+//        System.out.println(this.model.getAuswahlMp3Song().getPath());
+        for(int i=0; i<model.getMp3dateien().sizeOfList();i++){
+            System.out.println(model.getMp3dateien().getList().get(i));
+        }
     }
 
 

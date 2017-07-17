@@ -10,9 +10,9 @@ import javafx.scene.layout.BorderPane;
  * Die FXML Datei übernimmt ihren Part und der Controller ebenfalls etwas
  */
 
-public class MP3View extends BorderPane {
+public class MP3ViewClient extends BorderPane {
 
-    public MP3View() {
+    public MP3ViewClient() {
     }
 
 }

@@ -9,7 +9,7 @@ import javax.print.attribute.standard.Media;
 public class SongClass implements Song {
 
     /**     =====================================
-     *      -*- VARIABLEN DER KLASSE MP3Model -*-
+     *      -*- VARIABLEN DER KLASSE MP3ModelClient -*-
      *      =====================================
      *
      *

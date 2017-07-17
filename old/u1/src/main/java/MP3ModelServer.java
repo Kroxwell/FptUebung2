@@ -1,15 +1,15 @@
 import classes.SongClass;
 import classes.SongListClass;
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+
 import java.io.File;
 import java.rmi.RemoteException;
 
 
-public class MP3Model {
+public class MP3ModelServer {
 
     /**     =====================================
-     *      -*- VARIABLEN DER KLASSE MP3Model -*-
+     *      -*- VARIABLEN DER KLASSE MP3ModelClient -*-
      *      =====================================
      *
      *
@@ -58,23 +58,15 @@ public class MP3Model {
     private MediaPlayer player;
 
 
-    public MP3Model() {
+    public MP3ModelServer() {
         this.ordner = null;
         this.mp3dateien = new SongListClass();
         this.playlist = new SongListClass();
         this.auswahlMp3Song = null;
         this.auswahlPlSong = null;
         this.momentanerSong = null;
-        this.player = null;
-    }
 
-    public void playingBT(){
-        String path = "C:\\Users\\Marco\\Desktop\\Uni\\FPT\\Musikplayer\\RustedfromtheRain.mp3";
-        Media media = new Media(new File(path).toURI().toString());
-        MediaPlayer p = new MediaPlayer(media);
-        p.play();
     }
-
 
     public File getOrdner() { return this.ordner; }
     public void setOrdner(File ordner) {
